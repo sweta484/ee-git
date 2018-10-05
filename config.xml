@@ -159,6 +159,10 @@
     </gap:plugin>
 
     <!-- @todo: Android debuggable. -->
+        
+        <gap:config-file platform="android" parent="/manifest">
+         <application android:debuggable="false" />
+    </gap:config-file>
 
     <!-- See MOBILE-892 -->
     <preference name="permissions" value="none"/>
