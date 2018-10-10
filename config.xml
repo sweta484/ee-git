@@ -160,9 +160,9 @@
 
     <!-- @todo: Android debuggable. -->
         
-        <gap:config-file platform="android" parent="/manifest">
-         <application android:debuggable="false" />
-    </gap:config-file>
+       <edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:name='NUS Excutive Education']" mode="merge">
+        <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|screenLayout|smallestScreenSize" android:debuggable="false"></activity>
+    </edit-config>
 
     <!-- See MOBILE-892 -->
     <preference name="permissions" value="none"/>
