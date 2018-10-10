@@ -161,7 +161,7 @@
     <!-- @todo: Android debuggable. -->
         
        <edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:name='NUS Excutive Education']" mode="merge">
-        <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|screenLayout|smallestScreenSize" android:debuggable="false"></activity>
+        <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|screenLayout|smallestScreenSize" ></activity>
     </edit-config>
 
     <!-- See MOBILE-892 -->
